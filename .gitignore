@@ -1,6 +1,5 @@
-.sass-cache
-.bowerrc
-.editorconfig
-.idea
-.jshintrc
+node_modules
+dist
 .tmp
+.sass-cache
+app/bower_components
