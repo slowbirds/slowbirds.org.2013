@@ -23,6 +23,10 @@ body {
 a {
   color: #333;
 }
+a:hover {
+  color: #555;
+  text-decoration: none;
+}
 
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -61,8 +65,30 @@ a {
 }
 
 nav.navbar {
-  width: 240px;
+  width: 180px;
   margin: 0 auto;
+}
+nav.navbar li {
+  margin: 0 0 12px;
+}
+
+.contents {
+  width: 400px;
+  margin: 40px auto 0;
+}
+.contents ul li {
+  font-family: 'Amatic SC', cursive;
+  font-size: 140%;
+  margin: 0 auto;
+}
+.contents ul,
+.contents ul li {
+  list-style: none;
+}
+.contents ul li {
+  display: inline-table;
+  padding: 0 4px;
+  font-size: 32px;
 }
 
 .footer {
