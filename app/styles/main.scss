@@ -1,6 +1,7 @@
+/*
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
-
 @import 'sass-bootstrap/lib/bootstrap';
+*/
 @import 'http://fonts.googleapis.com/css?family=Amatic+SC:400,700';
 
 
@@ -22,6 +23,7 @@ body {
 }
 a {
   color: #333;
+  text-decoration: none;
 }
 a:hover {
   color: #555;
@@ -36,6 +38,12 @@ a:hover {
 
   padding-left: 15px;
   padding-right: 15px;
+}
+
+
+.container {
+  widht: 400px;
+  margin: 0 auto;
 }
 
 /* Custom page header */
@@ -64,32 +72,56 @@ a:hover {
   font-family: 'Amatic SC', cursive;
 }
 
+
+/* nav */
+
 nav.navbar {
-  width: 180px;
+  width: 400px;
   margin: 0 auto;
+  text-align: center;
 }
-nav.navbar li {
+.nav {
+  font-size: 48px;
+  font-family: 'Amatic SC', cursive;
+  margin: 0 auto;
+  display: inline-table;
+
+}
+.nav li {
   margin: 0 0 12px;
+  list-style: none;
+  display: table-cell;
+  white-space: nowrap;
+}
+.nav a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+}
+.nav a:hover {
+  background-color: rgba(230,230,230,0.6);
 }
 
 .contents {
   width: 400px;
   margin: 40px auto 0;
-}
-.contents ul li {
-  font-family: 'Amatic SC', cursive;
-  font-size: 140%;
-  margin: 0 auto;
+  text-align: center;
 }
 .contents ul,
 .contents ul li {
   list-style: none;
 }
-.contents ul li {
+.contents ul {
   display: inline-table;
+}
+.contents ul li {
+  font-family: 'Amatic SC', cursive;
   padding: 0 4px;
   font-size: 32px;
+  display: table-cell;
 }
+
 
 .footer {
   padding-top: 19px;
@@ -99,15 +131,6 @@ nav.navbar li {
   display: none;
 }
 
-.nav {
-  font-size: 48px;
-  font-family: 'Amatic SC', cursive;
-  margin: 0 auto;
-
-}
-.nav a {
-  color: #333;
-}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
