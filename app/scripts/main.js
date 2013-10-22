@@ -16,8 +16,7 @@ require(['app', 'jquery','share'], function (app, $, share) {
     $('.share-button').share({
       title: 'Share Button',
       image: 'http://slowbirds.org/images/logo.png',
-      app_id: '229912690368662',
       background: 'rgba(255,255,255,.5)',
-      color: '#3B2B45'
+      color: '#333333'
     });
 });
