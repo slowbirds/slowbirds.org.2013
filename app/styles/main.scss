@@ -2,8 +2,7 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @import 'sass-bootstrap/lib/bootstrap';
 */
-@import 'http://fonts.googleapis.com/css?family=Amatic+SC:400,700';
-
+@import url(http://fonts.googleapis.com/css?family=Raleway:100);
 
 
 .browsehappy {
@@ -16,17 +15,20 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 /* Space out content a bit */
 body {
-  background: #000 url("/images/background.png") 0 0 repeat;
+  background: #000 url("/images/background.jpg") 0 0 no-repeat;
+  background-size:cover;
   padding-top: 24px;
   padding-bottom: 24px;
-  color: #333333;
+  color: rgba(12, 12, 12, 0.8);
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
 }
 a {
-  color: #333;
+  color: #fcfcfc;
   text-decoration: none;
 }
 a:hover {
-  color: #555;
+  color: #f5f5f5;
   text-decoration: none;
 }
 
@@ -35,92 +37,80 @@ a:hover {
 .header,
 .marketing,
 .footer {
-
   padding-left: 15px;
   padding-right: 15px;
 }
 
 
 .container {
-  widht: 400px;
+  width: auto;
   margin: 0 auto;
 }
 
-/* Custom page header */
 .header {
-  font-family: 'Amatic SC', cursive;
   color: #333333;
 
+  h1 {
+    margin: 0 auto;
+    line-height: 40px;
+    padding-bottom: 19px;
+    font-size: 64px;
+    text-align: center;
+  
+    img {
+      display: block;
+      margin: 0 auto 32px;
+      transform: rotate(-10deg);
+    }
+  }
 }
-
-/* Make the masthead heading the same height as the navigation */
-.header h1 {
-  margin: 0 auto;
-  line-height: 40px;
-  padding-bottom: 19px;
-  font-size: 64px;
-  width: 220px;
-  text-align: center;
-  font-family: 'Amatic SC', cursive;
-}
-.header h1 img {
-  display: block;
-  margin-bottom: 24px;
-}
-
-.header h2 {
-  font-family: 'Amatic SC', cursive;
-}
-
 
 /* nav */
 
 nav.navbar {
-  width: 400px;
   margin: 0 auto;
   text-align: center;
 }
 .nav {
   font-size: 48px;
-  font-family: 'Amatic SC', cursive;
   margin: 0 auto;
   display: inline-table;
 
-}
-.nav li {
-  margin: 0 0 12px;
-  list-style: none;
-  display: table-cell;
-  white-space: nowrap;
-}
-.nav a {
-  color: #333;
-  text-decoration: none;
-  display: block;
-  padding: 8px;
-}
-.nav a:hover {
-  background-color: rgba(230,230,230,0.6);
+  li {
+    margin: 0 0 12px;
+    list-style: none;
+    display: table-cell;
+    white-space: nowrap;
+  }
+  a {
+    color: #fefefe;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+  }
+  a:hover {
+    background-color: rgba(230,230,230,0.6);
+  }
 }
 
 .contents {
-  width: 400px;
   margin: 40px auto 0;
   text-align: center;
+
+  ul,
+  ul li {
+    list-style: none;
+  }
+  ul {
+    display: inline-table;
+  }
+  ul li {
+    padding: 0 4px;
+    font-size: 32px;
+    display: table-cell;
+  }
 }
-.contents ul,
-.contents ul li {
-  list-style: none;
-}
-.contents ul {
-  display: inline-table;
-}
-.contents ul li {
-  font-family: 'Amatic SC', cursive;
-  padding: 0 4px;
-  font-size: 32px;
-  display: table-cell;
-}
+
 .share {
   text-align: center;
   margin: 0 auto;
@@ -130,7 +120,6 @@ nav.navbar {
 
 .footer {
   padding-top: 19px;
-  font-family: 'Amatic SC', cursive;
   border-top: 1px solid #e5e5e5;
   text-align: center;
   display: none;
